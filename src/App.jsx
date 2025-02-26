@@ -1,31 +1,35 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { SlEmotsmile } from "react-icons/sl";
-import './App.css'
+// import './App.css'
+// import Hello from './01/Hello'
+// import HelloDate from './01/HelloDate'
+import { SlHome } from "react-icons/sl";
+import { AiFillCopyrightCircle } from "react-icons/ai";
+import MyClock from "./02/MyClock";
+import MyDiv1 from "./03/MyDiv1";
 
-function App() {
+export default function App() {
 
-  return (
-    <div className="w-full h-full">
-      <div className='w-full flex justify-center items-center p-10'>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 className='text-7xl'>Vite + React</h1>
-      <div className="card">
-        <p>
-          권오현, whose name also can be written as Kwon Ohyeon and 權五玹
-        </p>
-      </div>
-      <p className="flex justify-center text-9xl text-amber-300">
-        <SlEmotsmile />
-      </p>
+  return ( //App()은 무적권 리턴이 있어야함!!!
+    <div className="w-full xl:w-8/10 h-screen flex flex-col mx-auto">
+      <header className='w-full  h-20 bg-amber-200
+                        px-15
+                        flex justify-between items-center'>
+        
+        <h1 className='text-4xl font-bold text-blue-400'>KDT01</h1><SlHome className='text-3xl font-bold text-blue-800'/>
+      </header>
+      <main className='w-full flex flex-col flex-grow
+                      items-center justify-evenly
+                      overflow-y-auto'>
+        <MyDiv1 />
+        {/* <MyClock /> */}
+        {/* <Hello />
+        <HelloDate /> */}
+        {/* <span className='font-[Noto_Color_Emoji] text-7xl'>🇰🇷🇺🇸🇯🇵🇬🇧🇨🇳</span> */}
+      </main>
+      <footer className='w-full  h-20 bg-amber-400
+                        px-15
+                        flex justify-between items-center'>
+        <span className='font-extrabold text-green-700'>K-Digital Training 25-1회차 교육과정</span><span className='flex items-center font-bold text-green-600 italic'><AiFillCopyrightCircle />권오현 Kwon Ohyeon. All rights not reserved yet :) </span>
+      </footer>
     </div>
   )
 }
-
-export default App

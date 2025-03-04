@@ -5,6 +5,7 @@ import { SlHome } from "react-icons/sl";
 import { AiFillCopyrightCircle } from "react-icons/ai";
 import MyClock from "./02/MyClock";
 import MyDiv1 from "./03/MyDiv1";
+import MyList from "./04/MyList";
 
 export default function App() {
 
@@ -19,11 +20,12 @@ export default function App() {
       <main className='w-full flex flex-col flex-grow
                       items-center justify-evenly
                       overflow-y-auto'>
-        <MyDiv1 />
+        {/* <MyDiv1 /> */}
         {/* <MyClock /> */}
         {/* <Hello />
         <HelloDate /> */}
         {/* <span className='font-[Noto_Color_Emoji] text-7xl'>🇰🇷🇺🇸🇯🇵🇬🇧🇨🇳</span> */}
+        <MyList />
       </main>
       <footer className='w-full  h-20 bg-amber-400
                         px-15

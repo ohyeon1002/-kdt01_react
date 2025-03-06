@@ -3,6 +3,7 @@
 // import HelloDate from './01/HelloDate'
 import { SlHome } from "react-icons/sl";
 import { AiFillCopyrightCircle } from "react-icons/ai";
+import FoodMain2 from "./06/FoodMain2"
 import FoodMain from "./06/FoodMain";
 // import MyClock from "./02/MyClock";
 // import MyDiv1 from "./03/MyDiv1";
@@ -29,6 +30,7 @@ export default function App() {
         {/* <span className='font-[Noto_Color_Emoji] text-7xl'>🇰🇷🇺🇸🇯🇵🇬🇧🇨🇳</span> */}
         {/* <Lotto /> */}
         <FoodMain />
+        {/* <FoodMain2 /> */}
       </main>
       <footer className='w-full  h-20 bg-amber-400
                         px-15

@@ -3,10 +3,11 @@
 // import HelloDate from './01/HelloDate'
 import { SlHome } from "react-icons/sl";
 import { AiFillCopyrightCircle } from "react-icons/ai";
+import FoodMain from "./06/FoodMain";
 // import MyClock from "./02/MyClock";
 // import MyDiv1 from "./03/MyDiv1";
 // import MyList from "./04/MyList";
-import Lotto from "./05/Lotto";
+// import Lotto from "./05/Lotto";
 
 export default function App() {
 
@@ -19,14 +20,15 @@ export default function App() {
         <h1 className='text-4xl font-bold text-blue-400'>KDT01</h1><SlHome className='text-3xl font-bold text-blue-800'/>
       </header>
       <main className='w-full flex flex-col flex-grow
-                      items-center justify-evenly
+                      items-center
                       overflow-y-auto'>
         {/* <MyDiv1 /> */}
         {/* <MyClock /> */}
         {/* <Hello />
         <HelloDate /> */}
         {/* <span className='font-[Noto_Color_Emoji] text-7xl'>🇰🇷🇺🇸🇯🇵🇬🇧🇨🇳</span> */}
-        <Lotto />
+        {/* <Lotto /> */}
+        <FoodMain />
       </main>
       <footer className='w-full  h-20 bg-amber-400
                         px-15

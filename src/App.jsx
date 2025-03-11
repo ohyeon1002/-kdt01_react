@@ -12,6 +12,7 @@ import MyClock from "./02/MyClock";
 // import Lotto from "./05/Lotto";
 // import MyToggle from "./07/MyToggle";
 // import "./02/MyClock.css" //전역 css
+import BoxOffice from "./09/BoxOffice";
 
 export default function App() {
 
@@ -27,7 +28,7 @@ export default function App() {
                       items-center justify-evenly
                       overflow-y-auto'>
         {/* <MyDiv1 /> */}
-        <MyClock />
+        {/* <MyClock /> */}
         {/* <Hello />
         <HelloDate /> */}
         {/* <span className='font-[Noto_Color_Emoji] text-7xl'>🇰🇷🇺🇸🇯🇵🇬🇧🇨🇳</span> */}
@@ -36,6 +37,7 @@ export default function App() {
         {/* <FoodMain2 /> */}
         {/* <MyToggle /> */}
         {/* <MyEffect /> */}
+        <BoxOffice />
       </main>
       <footer className='w-full  h-20 bg-amber-400
                         px-15

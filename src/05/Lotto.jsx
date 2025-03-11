@@ -1,8 +1,12 @@
 import TailBall from "../UI/TailBall"
 import TailButton from "../UI/TailButton"
+import { useState } from "react";
 
 export default function Lotto() {
     let set = new Set();
+    const [ifShow, setIfShow] = useState(false);
+    console.log(ifShow);
+
     while (set.size < 7) {
         set.add(Math.floor(Math.random()*45+1));
     }
@@ -14,7 +18,7 @@ export default function Lotto() {
             {tags}<span className="flex items-center text-5xl font-bold">+</span>{bonus}
         </div>
         <div className="flex justify-center">
-            <TailButton msg="로또 번호 생성" cn="bg-blue-500" />
+            <TailButton msg="로또 번호 생성" cn="bg-blue-500" action = {() => setIfShow(!ifShow)}/>
         </div>
     </div>
   )

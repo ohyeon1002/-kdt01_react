@@ -21,7 +21,7 @@ export default function App() {
         <h1 className='text-4xl font-bold text-blue-400'>KDT01</h1><SlHome className='text-3xl font-bold text-blue-800'/>
       </header>
       <main className='w-full flex flex-col flex-grow
-                      items-center
+                      items-center justify-evenly
                       overflow-y-auto'>
         {/* <MyDiv1 /> */}
         {/* <MyClock /> */}

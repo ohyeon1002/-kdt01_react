@@ -9,6 +9,7 @@ import FoodMain from "./06/FoodMain";
 // import MyDiv1 from "./03/MyDiv1";
 // import MyList from "./04/MyList";
 import Lotto from "./05/Lotto";
+import MyToggle from "./07/MyToggle";
 
 export default function App() {
 
@@ -28,9 +29,10 @@ export default function App() {
         {/* <Hello />
         <HelloDate /> */}
         {/* <span className='font-[Noto_Color_Emoji] text-7xl'>🇰🇷🇺🇸🇯🇵🇬🇧🇨🇳</span> */}
-        <Lotto />
+        {/* <Lotto /> */}
         {/* <FoodMain /> */}
         {/* <FoodMain2 /> */}
+        <MyToggle />
       </main>
       <footer className='w-full  h-20 bg-amber-400
                         px-15

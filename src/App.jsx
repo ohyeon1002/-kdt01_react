@@ -9,10 +9,11 @@ import MyEffect from "./08/MyEffect";
 import MyClock from "./02/MyClock";
 // import MyDiv1 from "./03/MyDiv1";
 // import MyList from "./04/MyList";
-// import Lotto from "./05/Lotto";
+import Lotto from "./05/Lotto";
 // import MyToggle from "./07/MyToggle";
 // import "./02/MyClock.css" //전역 css
 import BoxOffice from "./09/BoxOffice";
+import Traffic from "./10/Traffic";
 
 export default function App() {
 
@@ -37,7 +38,8 @@ export default function App() {
         {/* <FoodMain2 /> */}
         {/* <MyToggle /> */}
         {/* <MyEffect /> */}
-        <BoxOffice />
+        {/* <BoxOffice /> */}
+        <Trafficfic />
       </main>
       <footer className='w-full  h-20 bg-amber-400
                         px-15

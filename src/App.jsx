@@ -39,7 +39,7 @@ export default function App() {
         {/* <MyToggle /> */}
         {/* <MyEffect /> */}
         {/* <BoxOffice /> */}
-        <Trafficfic />
+        <Traffic />
       </main>
       <footer className='w-full  h-20 bg-amber-400
                         px-15

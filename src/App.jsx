@@ -14,6 +14,8 @@ import Lotto from "./05/Lotto";
 // import "./02/MyClock.css" //전역 css
 import BoxOffice from "./09/BoxOffice";
 import Traffic from "./10/Traffic";
+import MyRef from "./11/MyRef";
+import MyRef2 from "./11/MyRef copy 2";
 
 export default function App() {
 
@@ -26,8 +28,9 @@ export default function App() {
         <h1 className='text-4xl font-bold text-blue-400'>KDT01</h1><SlHome className='text-3xl font-bold text-blue-800'/>
       </header>
       <main className='w-full flex flex-col flex-grow
-                      items-center justify-evenly
                       overflow-y-auto'>
+                      {/* items-center justify-center */}
+
         {/* <MyDiv1 /> */}
         {/* <MyClock /> */}
         {/* <Hello />
@@ -39,7 +42,9 @@ export default function App() {
         {/* <MyToggle /> */}
         {/* <MyEffect /> */}
         {/* <BoxOffice /> */}
-        <Traffic />
+        {/* <Traffic /> */}
+        <MyRef />
+        {/* <MyRef2 /> */}
       </main>
       <footer className='w-full  h-20 bg-amber-400
                         px-15

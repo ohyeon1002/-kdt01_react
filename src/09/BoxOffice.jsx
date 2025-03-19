@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import BoxOfficeRow from "./BoxOfficeRow";
 
 
@@ -22,25 +22,28 @@ export default function BoxOffice() {
   //화면에 렌더링될 상태 변수
   const [detail, setDetail] = useState('');
   const [movieData, setMovieData] = useState([]);
-
+  
   //일일박스오피스 정보 가져오기
   const getFetchData = async () => {
     const apiKey = import.meta.env.VITE_APP_API_KEY;
 
-    const dt = getYesterday().replaceAll("-", ""); console.log(dt);
+    let dt = refDate.current.value.replaceAll("-", "");
     let url = "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json";
     url = `${url}?key=${apiKey}&targetDt=${dt}`;
-    console.log(url);
 
     const resp = await fetch(url);
     const data = await resp.json();
 
-    let boxList = data.boxOfficeResult.dailyBoxOfficeList;
+    let boxList = await data.boxOfficeResult.dailyBoxOfficeList;
     setMovieData(boxList);
   };
 
+  const refDate = useRef();
+
   //컴포넌트 실행시 한번 fetch
   useEffect(() => {
+    refDate.current.value = getYesterday();
+    refDate.current.max = getYesterday();
     getFetchData();
   }, []);
 
@@ -55,9 +58,11 @@ export default function BoxOffice() {
 
   return (
     <div className="w-full h-full">
-      <table className="w-full h-full text-center">
+      <form className="h-1/20 justify-self-end">
+      <input type="date" ref={refDate} onChange={getFetchData} /></form>
+      <table className="w-full h-19/20 text-center">
         <thead className="w-full" >
-          <tr className="w-full bg-green-100 border border-black" >
+          <tr className="w-full bg-green-100 border border-b-black" >
             <td>
               순위
             </td>

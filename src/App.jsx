@@ -16,6 +16,7 @@ import BoxOffice from "./09/BoxOffice";
 import Traffic from "./10/Traffic";
 import MyRef from "./11/MyRef";
 import MyRef2 from "./11/MyRef copy 2";
+import Gallery from "./12/Gallery";
 
 export default function App() {
 
@@ -43,8 +44,9 @@ export default function App() {
         {/* <MyEffect /> */}
         {/* <BoxOffice /> */}
         {/* <Traffic /> */}
-        <MyRef />
+        {/* <MyRef /> */}
         {/* <MyRef2 /> */}
+        <Gallery />
       </main>
       <footer className='w-full  h-20 bg-amber-400
                         px-15

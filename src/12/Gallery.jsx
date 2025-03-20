@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import TailCard from "../UI/TailCard";
+import SearchBox from "../UI/SearchBox";
 
 export default function Gallery() {
     const [things, setThings] = useState([]);
@@ -31,10 +32,9 @@ export default function Gallery() {
     return (
         <>
             <form className="m-3 h-10 flex flex-row justify-center">
-                <input type="text" ref={searchkey} onFocus={()=>{searchkey.current.value = '';}} placeholder="검색어를 입력하세요" className="border border-gray-400 focus:shadow-lg shadow-sm rounded-md mr-3 pl-2" />
-                <button type="button" onClick={handleSearch} className="border rounded-lg p-2 text-center bg-blue-600 hover:bg-blue-700 text-white" >
-                    검색
-                </button>
+                <SearchBox ref={searchkey} type="text" placeholder="검색어를 입력하세요"
+                                        function={handleSearch}
+                                        cn="border border-gray-400 focus:shadow-lg shadow-sm rounded-md mr-3 pl-2" />
             </form>
             <div className="grid grid-cols-3">
                 {cards}

@@ -59,7 +59,8 @@ export default function BoxOffice() {
   return (
     <div className="w-full h-full">
       <form className="h-1/20 justify-self-end">
-      <input type="date" ref={refDate} onChange={getFetchData} /></form>
+        <input type="date" ref={refDate} onChange={getFetchData} />
+      </form>
       <table className="w-full h-19/20 text-center">
         <thead className="w-full" >
           <tr className="w-full bg-green-100 border border-b-black" >

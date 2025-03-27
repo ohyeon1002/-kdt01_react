@@ -27,7 +27,7 @@ export default function Gallery() {
         searchkey.current.focus();
     }, []);
 
-    const cards = things.map(item => <TailCard key={item.galContentId} title={item.galTitle} subtitle={item.galPhotographyLocation} imgurl={item.galWebImageUrl} keyword={item.galSearchKeyword} />);
+    const cards = things.map(item => <TailCard key={item.galContentId} title={item.galTitle.replace("http", "https")} subtitle={item.galPhotographyLocation} imgurl={item.galWebImageUrl} keyword={item.galSearchKeyword} />);
 
     return (
         <>
@@ -36,7 +36,7 @@ export default function Gallery() {
                                         function={handleSearch}
                                         cn="border border-gray-400 focus:shadow-lg shadow-sm rounded-md mr-3 pl-2" />
             </form>
-            <div className="grid grid-cols-3">
+            <div className="grid grid-cols-3 justify-items-center">
                 {cards}
             </div>
         </>

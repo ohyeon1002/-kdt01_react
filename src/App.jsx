@@ -23,7 +23,7 @@ import RouteMain from "./14/RouteMain";
 import Menu from "./UI/Menu";
 import FCST from "./15/FCST";
 import FCSTList from "./15/FCSTList";
-import MyDiv1 from "./16/MyDiv1";
+import MyDiv1 from "./18/MyDiv1";
 
 export default function App() {
 

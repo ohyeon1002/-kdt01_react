@@ -23,6 +23,7 @@ import RouteMain from "./14/RouteMain";
 import Menu from "./UI/Menu";
 import FCST from "./15/FCST";
 import FCSTList from "./15/FCSTList";
+import MyDiv1 from "./16/MyDiv1";
 
 export default function App() {
 
@@ -37,8 +38,8 @@ export default function App() {
         <Link to="/"><SlHome className='text-3xl font-bold text-blue-800'/></Link>
       </header>
       <main className='w-full flex flex-col flex-grow
+                        items-center justify-center
                       overflow-y-auto'>
-                        {/* items-center justify-center */}
 
         {/* <MyDiv1 /> */}
         {/* <Hello />
@@ -60,6 +61,7 @@ export default function App() {
           {/* <RouteMain /> */}
           <Route path="/FCST" element={<FCST />} />
           <Route path="/FCSTList" element={<FCSTList />} />
+          <Route path="/MyDiv" element={<MyDiv1 />} />
         </Routes>
       </main>
       </BrowserRouter>

@@ -31,12 +31,7 @@ export default function FCSTList() {
     useEffect(() => {
         getFetchData();
     }, []);
-
-    // useEffect(() => {
-    //     if(!saved) return;
-    //     console.log(saved);
-    // }, [saved]);
-
+    
     const handleSelect = () => {
         const legends = opsData.filter(item => item.예보구분 == todo && item.항목명 == toShowRef.current.value)[0];
         const rel = saved.filter(item => item.category == legends.항목값);

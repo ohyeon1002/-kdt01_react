@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 
 export default function Menu() {
-    const btns = ["lotto","food","movie","tour","festa","FCST"]
+    const btns = ["lotto","food","movie","tour","festa","FCST", "MyDiv"]
     
                                         .map(path =>
                                                     <Link key={path} to={`/${path}`} className="mx-3">

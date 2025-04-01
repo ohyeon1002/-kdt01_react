@@ -1,6 +1,6 @@
 import TailButton from "../UI/TailButton";
 import { useAtom } from "jotai";
-import { cntAtom1, cntAtom2 } from "../17/CountAtoms";
+import { cntAtom1 } from "../17/CountAtoms";
 
 export default function MyDiv3() {
   const [n1, setN1] = useAtom(cntAtom1);
